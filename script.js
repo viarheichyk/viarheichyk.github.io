@@ -1,7 +1,7 @@
-document.ready(function(){
-  VK.init(function() { 
-       document.getElementBuId("info").innerHtml = 'done';
-    }, function() { 
-       alert("error!");
-  }, '5.74'); 
+document.addEventListener("DOMContentLoaded", function(event) { 
+    VK.init(function() { 
+     alert("done!");
+      }, function() { 
+     alert("error!");
+}, '5.74'); 
 });
