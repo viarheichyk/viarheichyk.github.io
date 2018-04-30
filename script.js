@@ -1,5 +1,5 @@
 VK.Init(function(){
-  VK.api("account.getProfileInfo", function(data){
-    alert(data.response.first_name);
+  VK.api("account.getProfileInfo", {}, function(data){
+    document.getElementById("info").innerHtml = data.response.first_name;
   });
 });
