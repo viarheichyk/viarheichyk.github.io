@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 function getInformation(){
-    VK.api("account.getProfileInfo", null, function(data){
+    VK.api("account.getProfileInfo", {"v":"5.74"}, function(data){
         document.getElementById("info").innerHtml = data.response.first_name;
     })
 }
